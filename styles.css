@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  display: flex;
+  padding: 0px 60px 0px 60px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+}
+
+.header a {
+  text-decoration: none; /* no underline */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 240% */
+  position: relative; /* Required for the ::after element */
+}
+
+.header a::after {
+  content: ""; /* Empty content for the underline */
+  position: absolute;
+  width: 50%; /* Center half of the text */
+  height: 3px; /* Thickness of the underline */
+  background-color: var(--Dark-Gray, #484041); /* Color of the underline */
+  bottom: -5px; /* Distance from the text */
+  left: 25%; /* Center the underline */
+  transform: scaleX(0); /* Start with no underline */
+  transform-origin: center;
+  transition: transform 0.3s ease; /* Animation for underline */
+  border-radius: 4px;
+}
+
+.header a:hover::after {
+  transform: scaleX(1); /* Show the underline on hover */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.headerButton {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--Dark-Gray, #484041);
+  text-align: center;
+}
+.text-hover {
+  position: relative;
+  display: inline-block; /* Ensure text is treated as inline-block to position the underline */
+}
+
+.text-hover::after {
+  content: ""; /* Empty content for the underline */
+  position: absolute;
+  width: 50%; /* Center half of the text */
+  height: 3px; /* Thickness of the underline */
+  background-color: black; /* Color of the underline */
+  bottom: -5px; /* Distance from the text */
+  left: 25%; /* Center the underline */
+  transform: scaleX(0); /* Start with no underline */
+  transform-origin: center;
+  transition: transform 0.3s ease; /* Animation for underline */
+}
+
+.text-hover:hover::after {
+  transform: scaleX(1); /* Show the underline on hover */
+}
+
+.mainText {
+  display: flex;
+  height: 221px;
+  align-items: flex-start;
+  gap: 96px;
+  flex-shrink: 0;
+}
+.left {
+  display: flex;
+  width: 736px;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: Roboto;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 84px; /* 105% */
+  letter-spacing: 2px;
+  gap: 10px;
+}
+.highlight-container {
+  color: white;
+  display: inline-block; /* Shrinks to fit the content */
+  font-family: Roboto, sans-serif;
+  background-color: #484041; /* Background color */
+  padding: 10px 15px 10px 15px; /* Optional: Adds padding around the text */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  overflow: hidden; /* Ensures the sliding text doesn't overflow */
+  position: relative; /* Ensures the text is positioned correctly */
+  width: max-content; /* Adjust container width dynamically */
+}
+
+#highlightedWord {
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Fading effect */
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.right {
+  display: flex;
+  width: 458px;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 125% */
+}
+.startButton {
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: var(--Dark-Gray, #484041);
+  text-align: center;
+  padding: 8px;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.content {
+  display: flex;
+  width: 733px;
+  align-items: flex-start;
+  gap: 120px;
+}
+
+.details {
+  border-radius: 12px;
+  background: var(--Dark-Gray, #484041);
+  width: 697px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 59px;
+  padding: 30px;
+}
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 57px;
+}
+.item {
+  width: 294px;
+  flex-shrink: 0;
+}
+.item img {
+  width: 34px;
+  height: 34px;
+}
+.itemTitle {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 88.889% */
+}
+.itemContent {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+}
+.seeButton {
+  display: flex;
+  width: 165px;
+  height: 64px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #1098f7;
+  text-align: center;
+  border-radius: 9px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 150% */
+}
+.tColorLightGray {
+  color: var(--Light-Gray, #9a8285);
+}
+.tColorDarkGray {
+  color: var(--Dark-Gray, #484041);
+}
+.tColorWhite {
+  color: var(--White, #ffffff);
+  text-decoration: none;
+}
+#bigIMG {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #484041;
+  margin-left: 30px;
+}
+#animation {
+  margin-left: -65px;
+  min-height: calc(100vh - 100px); /* Adjust based on your header height */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+}
+#animation::before,
+#animation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust fade height as needed */
+  z-index: 1;
+  pointer-events: none; /* Ensure the pseudo-elements don't interfere with interactions */
+}
+
+/* Top fade (transparent at the top to visible at the bottom) */
+#animation::before {
+  top: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* Bottom fade (transparent at the bottom to visible at the top) */
+#animation::after {
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}

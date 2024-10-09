@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  background-color: #f0f3f5;
+}
+body {
+  display: flex;
+  padding: 0px 40px 0px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+}
+
+.header a {
+  text-decoration: none; /* no underline */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 240% */
+  position: relative; /* Required for the ::after element */
+}
+
+.header a::after {
+  content: ""; /* Empty content for the underline */
+  position: absolute;
+  width: 50%; /* Center half of the text */
+  height: 3px; /* Thickness of the underline */
+  background-color: var(--Dark-Gray, #484041); /* Color of the underline */
+  bottom: -5px; /* Distance from the text */
+  left: 25%; /* Center the underline */
+  transform: scaleX(0); /* Start with no underline */
+  transform-origin: center;
+  transition: transform 0.3s ease; /* Animation for underline */
+  border-radius: 4px;
+}
+
+.header a:hover::after {
+  transform: scaleX(1); /* Show the underline on hover */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.tColorLightGray {
+  color: var(--Light-Gray, #9a8285);
+}
+.tColorDarkGray {
+  color: var(--Dark-Gray, #484041);
+}
+.tColorWhite {
+  color: var(--White, #ffffff);
+  text-decoration: none;
+}
+.headerButton {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--Dark-Gray, #484041);
+  text-align: center;
+}
+.title {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 84px; /* 105% */
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 64px;
+}
+.left {
+  display: flex;
+  width: 566px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.right {
+  display: flex;
+  width: 587px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.description {
+  color: var(--Dark-Gray, #484041);
+  font-family: roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 650px;
+  gap: 15px;
+  overflow: hidden;
+  color: var(--Dark-Gray, #484041);
+}
+
+.accordion-item {
+  border: 3px solid var(--Dark-Gray, #484041);
+  border-radius: 4px;
+}
+
+/* Styling for the accordion header buttons */
+.accordion-header {
+  width: 100%;
+  padding: 15px;
+  background-color: #f0f3f5;
+  border: none;
+  text-align: left;
+  font-family: roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+  background-color: #bcdff6d1;
+}
+
+/* Accordion content styling */
+.accordion-content {
+  max-height: 0;
+  padding: 0 10px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background-color: f0f3f5;
+  font-family: roboto;
+  font-size: 20px;
+  color: var(--Dark-Gray, #484041);
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.accordion-content p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* Active state for the opened accordion content */
+.accordion-item.active .accordion-content {
+  max-height: 200px; /* Adjust as per your content's height */
+  padding: 15px;
+}
