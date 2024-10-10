@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  background-color: #ffffff;
+}
 body {
   display: flex;
   padding: 0px 60px 0px 60px;
@@ -13,6 +16,13 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
+}
+/* Ensure all focusable elements have a visible focus outline */
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid #1098f7; /* Use a visible color for focus outline */
+  outline-offset: 2px;
 }
 
 .header a {

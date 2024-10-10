@@ -10,11 +10,13 @@
     <!-- Navigation bar -->
     <nav class="header" aria-label="Main navigation">
       <div class="logo">
-        <img
-          src="../assets/Logo-24 1.png"
-          alt="FocusPulse Logo"
-          aria-label="FocusPulse Logo"
-        />
+        <a href="../index.html" aria-label="Home page">
+          <img
+            src="../assets/Logo-24 1.png"
+            alt="FocusPulse Logo"
+            aria-label="FocusPulse Logo"
+          />
+        </a>
         <a href="../index.html" class="tColorDarkGray" aria-label="Home page"
           >FocusPulse</a
         >
@@ -37,7 +39,7 @@
     </nav>
 
     <!-- Page title -->
-    <div class="title" aria-labelledby="pageTitle">
+    <div class="title" id="pageTitle" aria-labelledby="pageTitle">
       Frequently Asked Questions
     </div>
 
@@ -66,10 +68,15 @@
               class="accordion-header"
               aria-expanded="false"
               aria-controls="faq1"
+              id="faq1-header"
             >
               What is FocusPulse?
             </button>
-            <div class="accordion-content" id="faq1">
+            <div
+              class="accordion-content"
+              id="faq1"
+              aria-labelledby="faq1-header"
+            >
               <p>
                 FocusPulse is a Chrome extension that helps you be more
                 productive by gamifying your daily tasks and goals.
@@ -83,10 +90,15 @@
               class="accordion-header"
               aria-expanded="false"
               aria-controls="faq2"
+              id="faq2-header"
             >
               How do I create a productivity streak?
             </button>
-            <div class="accordion-content" id="faq2">
+            <div
+              class="accordion-content"
+              id="faq2"
+              aria-labelledby="faq2-header"
+            >
               <p>
                 To create a productivity streak, open the extension and click
                 'Start.' When you complete the set time period, you will earn a
@@ -102,10 +114,15 @@
               class="accordion-header"
               aria-expanded="false"
               aria-controls="faq3"
+              id="faq3-header"
             >
               Can I customize my streaks?
             </button>
-            <div class="accordion-content" id="faq3">
+            <div
+              class="accordion-content"
+              id="faq3"
+              aria-labelledby="faq3-header"
+            >
               <p>
                 Yes, FocusPulse allows you to set custom goals and task
                 durations for your streaks. You can adjust the settings to match
@@ -120,10 +137,15 @@
               class="accordion-header"
               aria-expanded="false"
               aria-controls="faq4"
+              id="faq4-header"
             >
               What happens if I miss a streak?
             </button>
-            <div class="accordion-content" id="faq4">
+            <div
+              class="accordion-content"
+              id="faq4"
+              aria-labelledby="faq4-header"
+            >
               <p>
                 If you miss a day, your streak will reset, but you can always
                 start a new one the next day. FocusPulse encourages consistency
@@ -138,10 +160,15 @@
               class="accordion-header"
               aria-expanded="false"
               aria-controls="faq5"
+              id="faq5-header"
             >
               How does FocusPulse motivate me?
             </button>
-            <div class="accordion-content" id="faq5">
+            <div
+              class="accordion-content"
+              id="faq5"
+              aria-labelledby="faq5-header"
+            >
               <p>
                 FocusPulse motivates you by providing visual progress trackers,
                 rewarding you with badges, and helping you build momentum

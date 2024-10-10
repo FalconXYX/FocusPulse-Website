@@ -14,6 +14,13 @@ body {
   align-items: center;
   gap: 51px;
 }
+/* Ensure all focusable elements have a visible focus outline */
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid #1098f7; /* Use a visible color for focus outline */
+  outline-offset: 2px;
+}
 
 .header a {
   text-decoration: none; /* no underline */
