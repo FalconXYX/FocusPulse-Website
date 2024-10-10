@@ -6,97 +6,173 @@
     <title>FocusPulse Website</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body >
-    <nav class="header">
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="header" aria-label="Main navigation">
       <div class="logo">
-        <img src="assets/Logo-24 1.png" alt="" />
-        <a href="" class="tColorDarkGray"> FocusPulse</a>
+        <img
+          src="assets/Logo-24 1.png"
+          alt="FocusPulse Logo"
+          aria-label="FocusPulse Logo"
+        />
+        <a href="" class="tColorDarkGray" aria-label="Home">FocusPulse</a>
       </div>
-      <a href="pages/pricing.html" class="tColorDarkGray">Pricing</a>
-      <a href="pages/faq.html" class="  tColorDarkGray">FAQ </a>
-      <a href="pages/contact.html" class="tColorDarkGray">Contact Sales</a>
+      <a
+        href="pages/pricing.html"
+        class="tColorDarkGray"
+        aria-label="Pricing page"
+        >Pricing</a
+      >
+      <a
+        href="pages/faq.html"
+        class="tColorDarkGray"
+        aria-label="Frequently Asked Questions page"
+        >FAQ</a
+      >
+      <a
+        href="pages/contact.html"
+        class="tColorDarkGray"
+        aria-label="Contact Sales page"
+        >Contact Sales</a
+      >
     </nav>
-    <div id="animation" class="tColorDarkGray">FocusPulse</div>
+
+    <!-- Animation Section -->
+    <div
+      id="animation"
+      class="tColorDarkGray"
+      aria-label="Animated FocusPulse logo"
+    >
+      FocusPulse
+    </div>
+
+    <!-- Main Text Section -->
     <div class="mainText">
       <div class="left">
+        <!-- Heading for productivity improvement message -->
         Improve Your <br />
         <div class="highlight-container">
-          <span id="highlightedWord"></span>
+          <span id="highlightedWord" aria-live="polite"></span>
         </div>
       </div>
       <div class="right">
         <div class="tColorLightGray">
+          <!-- Brief description of FocusPulse -->
           FocusPulse allows you to gamify your productivity and time management.
         </div>
-        <div class="startButton" ><a class="tColorWhite" href="https://chromewebstore.google.com/search/focuspulse">Get Started</a></div>
-      </div>
-    </div>
-    <div class="content">
-      <img src="assets/example.png" alt="" id="bigIMG"/>
-      <div class="details">
-        <div class="row">
-          <div class="item">
-            <div class="itemTitle">
-              <img src="assets/graphIcon.png" alt="" />Time Tracking
-            </div>
-            <div class="itemContent">
-              Track your time by doing this and this this this this this this
-              this this
-            </div>
-          </div>
-          <div class="item">
-            <div class="itemTitle">
-              <img src="assets/graphIcon.png" alt="" />Time Tracking
-            </div>
-            <div class="itemContent">
-              Track your time by doing this and this this this this this this
-              this this
-            </div>
-          </div>
+        <!-- Call-to-action button -->
+        <div class="startButton">
+          <a
+            class="tColorWhite"
+            href="https://chromewebstore.google.com/search/focuspulse"
+            aria-label="Get Started with FocusPulse"
+            >Get Started</a
+          >
         </div>
-        <div class="row">
-          <div class="item">
-            <div class="itemTitle">
-              <img src="assets/graphIcon.png" alt="" />Time Tracking
-            </div>
-            <div class="itemContent">
-              Track your time by doing this and this this this this this this
-              this this
-            </div>
-          </div>
-          <div class="item">
-            <div class="itemTitle">
-              <img src="assets/graphIcon.png" alt="" />Time Tracking
-            </div>
-            <div class="itemContent">
-              Track your time by doing this and this this this this this this
-              this this
-            </div>
-          </div>
-        </div>
-        <div class="seeButton"><a href="pages/faq.html" class="tColorWhite">See More></a></div>
-    </div >
       </div>
     </div>
 
+    <!-- Content Section -->
+    <div class="content" aria-label="Feature highlights section">
+      <img
+        src="assets/example.png"
+        alt="Screenshot of FocusPulse interface"
+        id="bigIMG"
+      />
+      <div class="details">
+        <!-- First row of features -->
+        <div class="row">
+          <div class="item">
+            <div class="itemTitle">
+              <img
+                src="assets/graphIcon.png"
+                alt="Graph icon"
+                aria-hidden="true"
+              />Time Tracking
+            </div>
+            <div class="itemContent">
+              <!-- Description of time tracking feature -->
+              Track your time by doing this and this this this this this this
+              this this
+            </div>
+          </div>
+          <div class="item">
+            <div class="itemTitle">
+              <img
+                src="assets/graphIcon.png"
+                alt="Graph icon"
+                aria-hidden="true"
+              />Time Tracking
+            </div>
+            <div class="itemContent">
+              Track your time by doing this and this this this this this this
+              this this
+            </div>
+          </div>
+        </div>
+
+        <!-- Second row of features -->
+        <div class="row">
+          <div class="item">
+            <div class="itemTitle">
+              <img
+                src="assets/graphIcon.png"
+                alt="Graph icon"
+                aria-hidden="true"
+              />Time Tracking
+            </div>
+            <div class="itemContent">
+              Track your time by doing this and this this this this this this
+              this this
+            </div>
+          </div>
+          <div class="item">
+            <div class="itemTitle">
+              <img
+                src="assets/graphIcon.png"
+                alt="Graph icon"
+                aria-hidden="true"
+              />Time Tracking
+            </div>
+            <div class="itemContent">
+              Track your time by doing this and this this this this this this
+              this this
+            </div>
+          </div>
+        </div>
+
+        <!-- Button for seeing more features -->
+        <div class="seeButton">
+          <a
+            href="pages/faq.html"
+            class="tColorWhite"
+            aria-label="See more details"
+            >See More ></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.119.1/build/three.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script><script>
-VANTA.DOTS({
-  el: "#animation",
-  mouseControls: false,
-  touchControls: false,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 2.00,
-  scaleMobile: 1.00,
-  color: 0x5aff,
-  backgroundColor: 0xf0f3f5,
-  size: 3.00,
-  spacing: 35.00,
-  showLines: false,
-})
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script>
+      VANTA.DOTS({
+        el: "#animation",
+        mouseControls: false,
+        touchControls: false,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 2.0,
+        scaleMobile: 1.0,
+        color: 0x5aff,
+        backgroundColor: 0xf0f3f5,
+        size: 3.0,
+        spacing: 35.0,
+        showLines: false,
+      });
+    </script>
   </body>
 </html>

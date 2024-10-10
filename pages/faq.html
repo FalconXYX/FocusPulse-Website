@@ -7,41 +7,82 @@
     <link rel="stylesheet" href="faq.css" />
   </head>
   <body>
-    <nav class="header">
+    <!-- Navigation bar -->
+    <nav class="header" aria-label="Main navigation">
       <div class="logo">
-        <img src="../assets/Logo-24 1.png" alt="" />
-        <a href="../index.html" class="tColorDarkGray"> FocusPulse</a>
+        <img
+          src="../assets/Logo-24 1.png"
+          alt="FocusPulse Logo"
+          aria-label="FocusPulse Logo"
+        />
+        <a href="../index.html" class="tColorDarkGray" aria-label="Home page"
+          >FocusPulse</a
+        >
       </div>
-      <a href="pricing.html" class="tColorDarkGray">Pricing</a>
-      <a href="faq.html" class="tColorDarkGray">FAQ </a>
-      <a href="contact.html" class="tColorDarkGray">Contact Sales</a>
+      <a href="pricing.html" class="tColorDarkGray" aria-label="Pricing page"
+        >Pricing</a
+      >
+      <a
+        href="faq.html"
+        class="tColorDarkGray"
+        aria-label="Frequently Asked Questions page"
+        >FAQ</a
+      >
+      <a
+        href="contact.html"
+        class="tColorDarkGray"
+        aria-label="Contact Sales page"
+        >Contact Sales</a
+      >
     </nav>
-    <div class="title">Frequently Asked Questions</div>
+
+    <!-- Page title -->
+    <div class="title" aria-labelledby="pageTitle">
+      Frequently Asked Questions
+    </div>
+
+    <!-- Main content section -->
     <div class="content">
-      <div class="left">
-        <div class="description">
+      <!-- Left section with description and image -->
+      <div class="left" aria-labelledby="guideDescription">
+        <div class="description" id="guideDescription">
           If you're new to FocusPulse or looking to enhance your productivity
           journey, this guide will help you understand how to create
           productivity streaks and maximize the benefits of our platform.
         </div>
-        <img src="../assets/designThing.png" alt="" />
+        <img src="../assets/designThing.png" alt="Decorative design" />
       </div>
+
+      <!-- Right section with FAQ accordion -->
       <div class="right">
-        <div class="accordion">
+        <div class="accordion" aria-labelledby="faqSection">
+          <!-- FAQ Item 1 -->
           <div class="accordion-item">
-            <button class="accordion-header">What is FocusPulse?</button>
-            <div class="accordion-content">
+            <button
+              class="accordion-header"
+              aria-expanded="false"
+              aria-controls="faq1"
+            >
+              What is FocusPulse?
+            </button>
+            <div class="accordion-content" id="faq1" hidden>
               <p>
-                FocusPulse is a chrome extension that aims to help you be more
-                productive by gamifying productivity
+                FocusPulse is a Chrome extension that helps you be more
+                productive by gamifying your daily tasks and goals.
               </p>
             </div>
           </div>
+
+          <!-- FAQ Item 2 -->
           <div class="accordion-item">
-            <button class="accordion-header">
+            <button
+              class="accordion-header"
+              aria-expanded="false"
+              aria-controls="faq2"
+            >
               How do I create a productivity streak?
             </button>
-            <div class="accordion-content">
+            <div class="accordion-content" id="faq2" hidden>
               <p>
                 To create a productivity streak, open the extension and click
                 'Start.' When you complete the set time period, you will earn a
@@ -51,11 +92,16 @@
             </div>
           </div>
 
+          <!-- FAQ Item 3 -->
           <div class="accordion-item">
-            <button class="accordion-header">
+            <button
+              class="accordion-header"
+              aria-expanded="false"
+              aria-controls="faq3"
+            >
               Can I customize my streaks?
             </button>
-            <div class="accordion-content">
+            <div class="accordion-content" id="faq3" hidden>
               <p>
                 Yes, FocusPulse allows you to set custom goals and task
                 durations for your streaks. You can adjust the settings to match
@@ -64,11 +110,16 @@
             </div>
           </div>
 
+          <!-- FAQ Item 4 -->
           <div class="accordion-item">
-            <button class="accordion-header">
+            <button
+              class="accordion-header"
+              aria-expanded="false"
+              aria-controls="faq4"
+            >
               What happens if I miss a streak?
             </button>
-            <div class="accordion-content">
+            <div class="accordion-content" id="faq4" hidden>
               <p>
                 If you miss a day, your streak will reset, but you can always
                 start a new one the next day. FocusPulse encourages consistency
@@ -77,11 +128,16 @@
             </div>
           </div>
 
+          <!-- FAQ Item 5 -->
           <div class="accordion-item">
-            <button class="accordion-header">
+            <button
+              class="accordion-header"
+              aria-expanded="false"
+              aria-controls="faq5"
+            >
               How does FocusPulse motivate me?
             </button>
-            <div class="accordion-content">
+            <div class="accordion-content" id="faq5" hidden>
               <p>
                 FocusPulse motivates you by providing visual progress trackers,
                 rewarding you with badges, and helping you build momentum
@@ -92,6 +148,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
     <script src="../script.js"></script>
   </body>

@@ -3,23 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FocusPulse Website</title>
+    <title>FocusPulse Pricing</title>
     <link rel="stylesheet" href="pricing.css" />
   </head>
   <body>
-    <nav class="header">
+    <!-- Navigation bar -->
+    <nav class="header" aria-label="Main navigation">
       <div class="logo">
-        <img src="../assets/Logo-24 1.png" alt="" />
-        <a href="../index.html" class="tColorDarkGray"> FocusPulse</a>
+        <img
+          src="../assets/Logo-24 1.png"
+          alt="FocusPulse Logo"
+          aria-label="FocusPulse Logo"
+        />
+        <a href="../index.html" class="tColorDarkGray" aria-label="Home page"
+          >FocusPulse</a
+        >
       </div>
-      <a href="#" class="tColorDarkGray">Pricing</a>
-      <a href="faq.html" class="tColorDarkGray">FAQ </a>
-      <a href="contact.html" class="tColorDarkGray">Contact Sales</a>
+      <a href="#" class="tColorDarkGray" aria-label="Pricing page">Pricing</a>
+      <a
+        href="faq.html"
+        class="tColorDarkGray"
+        aria-label="Frequently Asked Questions page"
+        >FAQ</a
+      >
+      <a
+        href="contact.html"
+        class="tColorDarkGray"
+        aria-label="Contact Sales page"
+        >Contact Sales</a
+      >
     </nav>
-    <div class="titleText">Pricing</div>
+
+    <!-- Title -->
+    <div class="titleText" aria-labelledby="pricingTitle">Pricing</div>
+
+    <!-- Pricing cards -->
     <div class="content">
-      <div class="card">
-        <div class="cardTitle">Basic</div>
+      <!-- Basic Plan -->
+      <div class="card" aria-labelledby="basicPlan">
+        <div class="cardTitle" id="basicPlan">Basic</div>
         <div class="cardDescription">
           For users who want streak tracking to improve their productivity.
         </div>
@@ -28,67 +50,72 @@
           <ul>
             <li>
               <strong>Basic Streak Tracking</strong><br />
-              Track current days streaks to monitor your daily productivity.
+              Track your daily streaks to monitor productivity.
             </li>
             <li>
-              <strong>Daily Reminders </strong> <br />Get reminders to maintain
-              your streak and stay consistent.
+              <strong>Daily Reminders</strong> <br />
+              Get reminders to maintain your streak and stay consistent.
             </li>
             <li>
-              <strong> Limited Customization</strong> <br />
-              Choose from a small selection of preset streak themes and goals
+              <strong>Limited Customization</strong> <br />
+              Choose from a small selection of preset streak themes and goals.
             </li>
           </ul>
         </div>
       </div>
-      <div class="card">
-        <div class="cardTitle">Premium</div>
+
+      <!-- Premium Plan -->
+      <div class="card" aria-labelledby="premiumPlan">
+        <div class="cardTitle" id="premiumPlan">Premium</div>
         <div class="cardDescription">
-          For users who additional data tracking and extra analytics.
+          For users who want additional data tracking and extra analytics.
         </div>
         <div class="price">5$</div>
         <div class="cardList">
           <ul>
             <li>
-              <strong>Streak Tracking</strong><br />
-              Track current weeks streaks to monitor your weekly productivity.
+              <strong>Weekly Streak Tracking</strong><br />
+              Track weekly streaks to monitor overall productivity.
             </li>
             <li>
-              <strong>Daily Reminders </strong> <br />Get reminders to maintain
-              your streak and stay consistent.
+              <strong>Daily Reminders</strong> <br />
+              Get reminders to maintain your streak and stay consistent.
             </li>
             <li>
               <strong>Customization</strong> <br />
-              Choose from a expanded selection of preset streak themes and goals
+              Access an expanded selection of streak themes and goals.
             </li>
           </ul>
         </div>
       </div>
-      <div class="card">
-        <div class="cardTitle">Custom</div>
+
+      <!-- Custom Plan -->
+      <div class="card" aria-labelledby="customPlan">
+        <div class="cardTitle" id="customPlan">Custom</div>
         <div class="cardDescription">
-          For users who additional data tracking and extra analytics.
+          For users who need complete data tracking and full customization.
         </div>
         <div class="price">9$</div>
         <div class="cardList">
           <ul>
             <li>
-              <strong>Unlimted Streak Tracking</strong><br />
-              Track all streaks to monitor your productivity.
+              <strong>Unlimited Streak Tracking</strong><br />
+              Track all streaks to monitor and optimize productivity.
             </li>
             <li>
-              <strong>Daily Reminders </strong> <br />Get reminders to maintain
-              your streak and stay consistent.
+              <strong>Daily Reminders</strong> <br />
+              Get reminders to maintain your streak and stay consistent.
             </li>
             <li>
-              <strong> Unlimited Customization</strong> <br />
-              Choose from selection of preset streak themes and goals.
+              <strong>Unlimited Customization</strong> <br />
+              Full access to all preset streak themes and goal customizations.
             </li>
           </ul>
         </div>
       </div>
     </div>
 
+    <!-- Script -->
     <script src="script.js"></script>
   </body>
 </html>

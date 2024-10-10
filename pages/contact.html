@@ -3,65 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FocusPulse Website</title>
+    <title>FocusPulse Website - Contact Us</title>
     <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
-    <nav class="header">
+    <!-- Navigation bar -->
+    <nav class="header" aria-label="Main navigation">
       <div class="logo">
-        <img src="../assets/Logo-24 1.png" alt="" />
-        <a href="../index.html" class="tColorDarkGray"> FocusPulse</a>
+        <img
+          src="../assets/Logo-24 1.png"
+          alt="FocusPulse Logo"
+          aria-label="FocusPulse logo"
+        />
+        <a href="../index.html" class="tColorDarkGray" aria-label="Home page"
+          >FocusPulse</a
+        >
       </div>
-      <a href="pricing.html" class="tColorDarkGray">Pricing</a>
-      <a href="faq.html" class="tColorDarkGray">FAQ </a>
-      <a href="#" class="tColorDarkGray">Contact Sales</a>
+      <a href="pricing.html" class="tColorDarkGray" aria-label="Pricing page"
+        >Pricing</a
+      >
+      <a
+        href="faq.html"
+        class="tColorDarkGray"
+        aria-label="Frequently Asked Questions page"
+        >FAQ</a
+      >
+      <a href="#" class="tColorDarkGray" aria-label="Contact Sales page"
+        >Contact Sales</a
+      >
     </nav>
-    <div class="title">
-      <div class="titleText">Contact Us</div>
+
+    <!-- Title and subtitle -->
+    <div class="title" aria-labelledby="pageTitle">
+      <div class="titleText" id="pageTitle">Contact Us</div>
       <div class="subtitleText">
         Feel free to contact us to discuss purchasing
       </div>
     </div>
-    <div class="content">
+
+    <!-- Main content section -->
+    <div class="content" aria-labelledby="contactForm">
+      <!-- Contact form section -->
       <div class="messageBox">
-        <form action="">
-          <div class="form">
+        <form action="" aria-label="Contact form">
+          <div class="form" id="contactForm">
+            <!-- Name and email input fields -->
             <div class="formTop">
-              <input type="text" placeholder="Name" required />
-              <input type="email" placeholder="Email" required />
+              <input
+                type="text"
+                placeholder="Name"
+                required
+                aria-label="Name input field"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                aria-label="Email input field"
+              />
             </div>
+            <!-- Message input field -->
             <div class="formBottom">
               <textarea
                 required
                 name="messageBox"
-                id=""
                 placeholder="Enter your message or question to us here!"
+                aria-label="Message input field"
               ></textarea>
             </div>
+            <!-- Send button -->
             <div class="sendButton">
-              <a href="#" class="tColorWhite">Send</a>
+              <a href="#" class="tColorWhite" aria-label="Send message">Send</a>
             </div>
           </div>
         </form>
       </div>
-      <div class="testimonials">
-        <div class="testimonialsTitle">Our Customers</div>
+
+      <!-- Testimonials section -->
+      <div class="testimonials" aria-labelledby="testimonialsTitle">
+        <div class="testimonialsTitle" id="testimonialsTitle">
+          Our Customers
+        </div>
+        <!-- Testimonial card 1 -->
         <div class="card">
-          <img src="../assets/nexora.png" alt="" />
+          <img
+            src="../assets/nexora.png"
+            alt="Nexora Logo"
+            aria-label="Nexora company logo"
+          />
           <p>
             FocusPulse transformed our team's productivity, making every project
             a seamless success with gamified focus streaks! 9/10
           </p>
         </div>
+        <!-- Testimonial card 2 -->
         <div class="card">
-          <img src="../assets/ecovibe.png" alt="" />
+          <img
+            src="../assets/ecovibe.png"
+            alt="Ecovibe Logo"
+            aria-label="Ecovibe company logo"
+          />
           <p>
             FocusPulse transformed our team's productivity, making every project
             a seamless success with gamified focus streaks! 9/10
           </p>
         </div>
+        <!-- Testimonial card 3 -->
         <div class="card">
-          <img src="../assets/orbita.png" alt="" />
+          <img
+            src="../assets/orbita.png"
+            alt="Orbita Logo"
+            aria-label="Orbita company logo"
+          />
           <p>
             FocusPulse transformed our team's productivity, making every project
             a seamless success with gamified focus streaks! 9/10
@@ -70,6 +123,7 @@
       </div>
     </div>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
   </body>
 </html>
