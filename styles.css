@@ -21,7 +21,7 @@ body {
 a:focus,
 button:focus,
 input:focus {
-  outline: 3px solid #1098f7; /* Use a visible color for focus outline */
+  outline: 1px solid #1098f7; /* Use a visible color for focus outline */
   outline-offset: 2px;
 }
 
