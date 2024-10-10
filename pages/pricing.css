@@ -53,13 +53,16 @@ body {
   flex-shrink: 0;
 }
 .headerButton {
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  margin-left: 100px;
+  padding: 10px;
+  width: 115px;
   flex-shrink: 0;
   border-radius: 12px;
-  background: var(--Dark-Gray, #484041);
+  background: #1098f7;
   text-align: center;
+  text-decoration: none;
 }
 .titleText {
   width: 1301px;
@@ -133,7 +136,7 @@ body {
   font-family: Roboto;
   font-size: 22px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   display: flex;
 }
