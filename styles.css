@@ -99,6 +99,7 @@ input:focus {
   align-items: flex-start;
   gap: 96px;
   flex-shrink: 0;
+  padding-top: 150px;
 }
 .left {
   display: flex;
